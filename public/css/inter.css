@@ -1,0 +1,42 @@
+h1 {
+  margin-left: 50px;
+  background-color: green;
+  color: orange;
+  text-align: center;
+}
+
+.container {
+  background-color: rgb(243, 193, 99);
+  border: 2px solid orange;
+  width: 1200px;
+  height: 300px;
+  margin-left: 100px;
+  display: flex;
+}
+
+.div1 {
+  width: 300px;
+  background-color: rgb(117, 183, 245);
+  border: 2px solid rgb(29, 29, 212);
+  height: 150px;
+  margin-left: 80px;
+  margin-top: 60px;
+}
+
+.div2 {
+  width: 300px;
+  background-color: rgb(247, 167, 167);
+  border: 2px solid rgb(212, 29, 29);
+  height: 150px;
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+.div3 {
+  width: 300px;
+  background-color: rgb(163, 241, 193);
+  border: 2px solid rgb(29, 212, 127);
+  height: 150px;
+  margin-left: 60px;
+  margin-top: 60px;
+}/*# sourceMappingURL=inter.css.map */
