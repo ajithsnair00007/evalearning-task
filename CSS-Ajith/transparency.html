@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparency</title>
+    <style>
+        .img1{
+            width: 300x;
+            height: 200px;
+        }
+        .img1:hover{
+            opacity: 0.5;
+        }
+        .img2{
+            width: 300x;
+            height: 200px;
+            opacity: 0.5;
+        }
+        .img2:hover{
+            opacity: 1;
+        }
+        div.transbox{
+            width: 100%;
+            height: 700px;
+            background-image: url('./messi-world-cup.jpg');
+            background-repeat: repeat;
+            margin: auto;
+            padding: 3px;
+            text-align: center;
+            padding-top: 350px;
+        }
+        div.innerbox{
+            width: 300px;
+            height:30px;
+            background-color: #ffffff;
+            margin: auto;
+            opacity: 0.5;
+            text-align: center;
+        }
+        div.innerbox p{
+           font-weight: bold;
+           font-size: 60px;
+           color: darkmagenta;
+          
+        }
+    </style>
+</head>
+<body>
+    <img class="img1" src="./messi-world-cup.jpg" alt="">
+    <img class="img2" src="./messi-world-cup.jpg" alt=""> <br> <br>
+    <div class="transbox">
+        <div class="innerbox">
+            <p>Example for transparency box</p>
+        </div>
+        
+    </div>
+</body>
+</html>

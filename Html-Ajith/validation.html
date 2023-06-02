@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+<body style="background-color: darkgrey; text-align: center;">
+    <div>
+        <form action="forms.html" autocomplete="on">
+           <label for="fname">First Name</label> <br>
+           <input type="text" required autofocus> <br> <br>
+    
+           <label for="lname">Last Name</label> <br>
+           <input type="text" required> <br> <br>
+    
+           <label for="email">Email</label> <br>
+           <input type="email" required> <br> <br>
+    
+           <label for="password">Password</label><br>
+           <input type="password" id="password" required placeholder="enter a strong password"><br> <br>
+        
+           <label for="DOB">Date of Birth</label> <br>
+           <input type="date" > <br> <br>
+
+           <label for="phno">Enter Phone Number::</label><br>
+           <input type="text" id="phno" name="phno" maxlength="10" size="10"><br><br>
+
+           <input type="radio" name="tech" value="eng" checked>Engineering   
+           <input type="radio" name="tech" value="deg">Degree<br><br>
+
+           <input type="checkbox" name="sport1" value="ckt">Cricket
+           <input type="checkbox" name="sport2" value="fbl" checked>Football<br><br>
+
+           <label for="num">Choose a number between 1 to 10</label>
+           <input type="number" id="num" name="num" min="1" max="10"><br><br>
+    
+           <input type="submit" value="submit"> <br><br>
+    
+           <input type = "reset" name = "reset"  value = "Reset" />
+    
+       </form>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,62 @@
+$bgColor: orange;
+$list: 10px 20px 30px;
+$list2:40px;
+
+h1{
+    color: darken($bgColor,20);
+    padding: nth($list,3);
+}
+h2{
+    color: lighten($bgColor,10);
+    padding: set-nth($list,2,2em);
+}
+h3{
+    color:darken($bgColor,30);
+    padding: join($list,$list2);
+}
+h4{
+    color: red;
+    padding: append($list2,30px);
+}
+.div1{
+    background-color: $bgColor;
+    border: 2px solid ;
+    border-color: darken($bgColor, 20);
+    width: 1000px;
+    height: 200px;
+}
+
+.div2{
+    background-color: darken($bgColor, 10);
+    @extend .div1
+}
+
+.div3{
+    background-color: lighten($bgColor, 20);
+    @extend .div1
+}
+
+.div4{
+    background-color: adjust-hue($bgColor, 20);
+    @extend .div1
+}
+
+.div5{
+    background-color: saturate($bgColor, 70);
+    @extend .div1
+}
+.div6{
+    background-color: desaturate($bgColor, 70);
+    @extend .div1
+}
+
+.div7{
+    background-color: mix($bgColor,blue, 60);
+    @extend .div1
+}
+
+.div8{
+    background-color: transparentize($bgColor, 0.4);
+    @extend .div1
+}
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body style="background-color: bisque;">
+    <div>
+        <h1>HTML FORMS</h1>
+        <p>forms are used to collect input from the user</p>
+        <h3>Form attributes</h3>
+        <ul>
+            <li> <b>action:</b> defines which server file the form data should be sent to when the form is submitted.</li>
+            <li> <b>method:</b> specifies the method to be used when submitting the form data to the server.</li>
+            <li> <b>target:</b> specifies if the submitted result will open in a new browser tab or not.</li>
+        </ul>
+    </div> <hr>
+
+    <div style="text-align: center;">
+        <h1>Basic HTML Form</h1>
+        <form action="Links.html">
+            <label for="firstname">First Name</label> <br>
+            <input type="text"><br><br>
+            <label for="lastname">Last Name</label><br>
+            <input type="text"><br><br>
+            <label for="email">Email</label><br>
+            <input type="email"><br><br>
+            <label for="password">Password</label><br>
+            <input type="password"><br><br>
+            <button>submit</button>
+        </form>
+    </div> <hr>
+
+    <div style="text-align: center;">
+        <h1>Form with radiobuttons</h1>
+        <form>
+            <input type = "radio" name = "subject" value = "frontend"> Frontend
+            <input type = "radio" name = "subject" value = "backend"> Backend
+            <input type="radio" name="subject" value="fullstack"> FullStack
+         </form> 
+    </div> <hr>
+
+    <div style="text-align: center;">
+        <h1>Form - Textarea</h1>
+        <form action="">
+            <textarea name="description"  cols="10" rows="10"></textarea> <br>
+            <button>submit</button>
+        </form>
+    </div> <hr>
+
+    <div style="text-align: center;">
+        <h1>Form with fieldset</h1>
+        <form>
+            <fieldset>
+              <legend>Employee Details</legend>
+              <label for="Employee name">Employee name:</label><br>
+              <input type="text" id="Employee name"><br>
+              <label for="Des name">Designation:</label><br>
+              <input type="text" id="Des name"><br><br>
+              <input type="submit" value="Submit">
+              
+            </fieldset>
+          </form>
+    </div> <hr>
+
+    <div style="text-align: center;">
+        <h1>Drop down</h1>
+        <form>
+            <label for="course">Select your course</label>
+            <select name="course" id="course">
+                <option value="React">React</option>
+                <option value="Angular">Angular</option>
+                <option value="Python">Python</option>
+                <option value="MY SQL">MY SQL</option>
+                <option value="java">JAVA</option>
+            </select>
+            <button type="button" onclick="alert('Best of luck for your new course')">Click Here</button>
+        </form>
+    </div>
+    
+</body>
+</html>

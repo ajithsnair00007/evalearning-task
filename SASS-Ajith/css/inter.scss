@@ -1,0 +1,59 @@
+$bgclr: rgb(243, 193, 99);
+$borderColor: orange;
+$container-width: 1200;
+$height: 300px;
+
+@function one-third($width){
+      @return $width/4 + px;
+}
+
+@mixin margin($position,$unit){
+    margin-#{$position}: $unit + px;
+}
+
+@mixin color($bgcolor, $color){
+    background-#{$bgcolor} : $color
+}
+
+h1{
+    @include margin(left,50);
+    @include color(color,green);
+    color: orange;
+    text-align: center;
+}
+.container{
+    @include color(color,$bgclr);
+    border: 2px solid $borderColor;
+    width: $container-width + px;
+    height: $height;
+    @include margin(left,100);
+    display: flex;
+    
+}
+
+.div1{
+    width: one-third($container-width) ;
+    @include color(color,rgb(117, 183, 245));
+    border: 2px solid rgb(29, 29, 212);
+    height: $height/2;
+    @include margin(left,80);
+    @include margin(top,60);
+}
+.div2{
+    width: one-third($container-width) ;
+    @include color(color,rgb(247, 167, 167));
+    border: 2px solid rgb(212, 29, 29);
+    height: $height/2;
+    @include margin(left,60);
+    @include margin(top,60);
+}
+.div3{
+    width: one-third($container-width) ;
+    @include color(color,rgb(163, 241, 193));
+    border: 2px solid rgb(29, 212, 127);
+    height: $height/2;
+    @include margin(left,60);
+    @include margin(top,60);
+}
+
+

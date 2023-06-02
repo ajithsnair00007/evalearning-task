@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    
+    <style>
+        .favorite{
+            color: red;
+        }
+        ul#fruits li{
+            color: blue;
+        }
+        .actor{
+            color: green;
+        }
+        .actor{
+            color: blueviolet;
+        }
+        .eg{
+            color: deeppink;
+        }
+    </style>
+    <link rel="stylesheet" href="specific.css">
+</head>
+<body>
+    <h1>Specificity</h1>
+    <h3>Order of specificty</h3>
+    <p style="color: red;">inline selector > id selector > class,pseudo class,attribute selector > elements,pseudo element selector</p>
+    <ul id="fruits">
+        <li>Apple</li>
+        <li class="favorite">Mango</li>
+        <li style="color: green;">Grapes</li>
+    </ul>
+    <hr>
+    <h2 style="color: crimson;"><u>If specificity of two tags are same, then latest will be considered as more specific while styling.</u> </h2>
+    <div class="actor">
+        <h4>Mohanlal</h4>
+        <p>Complete Actor</p>
+    </div><hr>
+    <h1>Case of external css</h1>
+    <ul>
+        <li>if we use an external css file and which placed above the internal style tag,internal styling will be more specific.</li>
+        <li>if we use an external css file and which placed below the internal style tag,external styling will be more specific.</li>
+    </ul>
+    <h5>Example</h5>
+    <div class="eg">
+        This is an example for css specificity.
+    </div>
+   
+    
+    
+    
+</body>
+</html>

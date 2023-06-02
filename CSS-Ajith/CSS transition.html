@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        div{
+            background-color: black;
+            width: 200px;
+            height: 200px;
+            transition: width 1s ,height 3s;
+            color: goldenrod;
+            font-size: 30px;
+            font-weight: bolder;
+            text-align: center;
+            line-height: 180px;
+        }
+        div:hover{
+            background-color: goldenrod;
+            width: 300px;
+            height: 400px;
+            color: black;
+            font-style: italic;
+            font-weight: 900;
+            line-height: 340px;
+        }
+        h3{
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 180px;
+            transition: width 1s, height 4s;
+        }
+        #h1 {transition-timing-function: linear;}
+        #h2 {transition-timing-function: ease;}
+        #h3 {transition-timing-function: ease-in;}
+        #h4 {transition-timing-function: ease-out;}
+        #h5 {transition-timing-function: ease-in-out;} 
+
+        h3:hover{
+            background-color: chartreuse;
+            width: 400px;
+            height: 100px;
+        }
+        h4{
+            background-color: blueviolet;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 180px;
+            transition: width 2s;
+            transition-delay: 2s;
+        }
+        h4:hover{
+            width: 100px;
+            overflow: scroll;
+
+        }
+        h2{
+            background-color: yellowgreen;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 180px;
+            transition: width 2s, height 2s, transform 2s;
+            overflow: auto;
+        }
+        h2:hover{
+            width: 500px;
+            height: 500px;
+            background-color: palevioletred;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transitions</h1>
+    <div>Touchme!</div>
+    <h3 id="h1">LINEAR</h3>
+    <h3 id="h2">EASE</h3>
+    <h3 id="h3">EASE-IN</h3>
+    <h3 id="h4">EASE-OUT</h3>
+    <h3 id="h5">EASE-IN-OUT</h3>
+
+    <h4>Transition-Delay</h4> <br><br><br>
+
+    <h2>TRANSITION-TRANSFORM</h2>
+</body>
+</html>

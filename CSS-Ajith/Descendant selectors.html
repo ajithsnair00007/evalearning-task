@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selectors</title>
+    <style>
+        div p{
+            color: blueviolet;
+        }
+        div>h5{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descendant selectors</h1>
+    <p style="color: rgb(255, 145, 0);"><b> The descendant selector matches all elements that are descendants of a specified element.</b></p>
+
+    <div>
+        <p>hello!how are you?</p>
+        <p>I am fine,Thanks</p>
+    </div>
+    <p>hello!how are you?</p>
+    <p>I am fine,Thanks</p>
+
+    <h1>Child Selectors</h1>
+    <p>The child selector selects all elements that are the children of a specified element.</p>
+
+    <div>
+        <h5>hello!how are you?</h5>
+        <h5>I am fine,Thanks</h5>
+        <span><h5>hello i am not a child but a descendant</h5></span>
+    </div>
+    
+
+</body>
+</html>

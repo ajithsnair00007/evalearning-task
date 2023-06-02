@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        a[target]{
+            color: goldenrod;
+            background-color: black;
+        }
+        [class|="top"]{
+            color: red;;
+        }
+        [class^="bottom"]{
+            color: green;
+
+        }
+        [class$="tex"]{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute Selector</h1>
+
+    <h2>[attribute] selector</h2>
+    <a href="">Click Me</a>
+    <a href="" target="_blank">Click Me</a>
+    <hr>
+
+    <h2>[attribute|="value"] selector</h2>
+    <p class="top-header">Welcome</p>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+    <hr>
+
+    <h2>[attribute^="value"] selector</h2>
+    <p class="bottom-header">Welcome</p>
+    <p class="bottom-text">Hello world!</p>
+    <p class="bottomcontent">Are you learning CSS?</p>
+
+    <h2>[attribute$="value"] selector</h2>
+    <p class="bot-header">Welcome</p>
+    <p class="bot-tex">Hello world!</p>
+    <p class="bottex">Are you learning CSS?</p>
+</body>
+</html>

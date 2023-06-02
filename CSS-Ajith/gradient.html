@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .lngr1{
+            height: 300px;
+            background: linear-gradient(green,yellow);
+            text-align: center;
+        }
+        
+        .lngr2{
+            height: 300px;
+            background: linear-gradient(to right, orange,yellow);
+            text-align: center;
+        }
+        .lngr3{
+            height: 300px;
+            background: linear-gradient(to bottom left, crimson, blue);
+            text-align: center;
+        }
+        .lngr4{
+            height: 300px;
+            background: linear-gradient(to right, violet,indigo,blue,green,yellow,orange,red );
+            text-align: center;
+        }
+        .lngr5{
+            height: 300px;
+            background: repeating-linear-gradient(crimson,green 10%,yellow 20%);
+            text-align: center;
+        }
+        .raln1{
+            height: 300px;
+            width: 300px;
+            background: radial-gradient(crimson,orange,yellow);
+        }
+        .raln2{
+            height: 300px;
+            width: 300px;
+            background: radial-gradient(crimson 5%,yellow 15%, green 60%);
+        }
+        .raln3{
+            height: 300px;
+            width: 300px;
+            background: radial-gradient(circle,red,yellow,green);
+        }
+        .raln4{
+            height: 300px;
+            width: 400px;
+            background: repeating-radial-gradient(red,yellow 10%,green 15%) ;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS GRADIENTS</h1>
+    <h2>LINEAR GRADIENT</h2>
+    <div class="lngr1"><b>TOP TO BOTTOM(default)</b> </div> <br><br><hr>
+    <div class="lngr2"><b>LEFT TO RIGHT</b> </div> <br><br><hr>
+    <div class="lngr3"><b>DIAGONAL</b> </div> <br><br><hr>
+    <div class="lngr4"><b>MULTIPLE COLORS</b> </div> <br><br><hr> 
+    <div class="lngr5"><b>REPEATING LINEAR GRADIENT</b> </div> <br><br><hr>
+
+    <h2>RADIAL GRADIENTS</h2>
+    <div class="raln1"><b> EVENLY SPACED GARADIENT</b></div> <br><br><hr>
+    <div class="raln2"><b> DIFFERENTLY SPACED GRADIENT</b></div> <br><br><hr>
+    <div class="raln3"><b> SET SHAPE</b></div> <br><br><hr>
+    <div class="raln4"><b>REPEATING RADIAL</b></div>
+</body>
+</html>

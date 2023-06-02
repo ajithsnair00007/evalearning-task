@@ -1,0 +1,372 @@
+body {
+  width: 100%;
+  font-family: "Founders Grotesk", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+body p {
+  font-weight: 400;
+  color: rgba(37, 48, 53, 0.7);
+}
+
+.top-container {
+  display: flex;
+  margin: 2%;
+}
+
+.lanterna {
+  background-color: rgb(252, 205, 50);
+  width: 164px;
+  height: 80px;
+  border: 1px solid rgb(252, 205, 50);
+  border-bottom-right-radius: 50px;
+  text-align: center;
+}
+.lanterna h3 {
+  line-height: 10%;
+}
+
+.nav1 {
+  padding-left: 10px;
+}
+.nav1 ul {
+  list-style: none;
+}
+.nav1 ul li {
+  display: inline-block;
+  padding: 20px;
+}
+.nav1 ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: small;
+}
+
+.nav2 {
+  margin-left: auto;
+  margin-top: 25px;
+}
+.nav2 li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 50px;
+}
+.nav2 li a {
+  text-decoration: none;
+  color: black;
+  font-size: small;
+}
+
+.talk {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.login {
+  background-color: white;
+  width: 100px;
+  border: 1px solid;
+  border-color: white rgb(194, 192, 192) white white;
+  padding: 10px;
+  text-align: center;
+}
+
+.booknow {
+  background-color: white;
+  width: 100px;
+  border: 1px solid rgb(146, 140, 140);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  margin-top: 5%;
+}
+.grid-container .grid1 {
+  margin-left: 17%;
+  font-size: larger;
+}
+.grid-container .grid1 span {
+  text-decoration: underline;
+  text-decoration-color: rgb(252, 205, 50);
+}
+.grid-container .grid2 .p1 {
+  padding-top: 3%;
+}
+.grid-container .grid2 .p2 {
+  padding-top: 4%;
+}
+.grid-container .grid2 .p2 span {
+  background: rgb(252, 205, 50);
+  width: 200px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: bold;
+}
+.grid-container .grid2 .p2 a {
+  color: black;
+  font-size: small;
+  font-weight: bold;
+}
+
+.image {
+  margin-top: 7%;
+}
+.image img {
+  width: 100%;
+  height: 85vh;
+}
+
+.service-grid {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: rgb(1, 24, 31);
+  width: 100%;
+  height: 60vh;
+  margin-top: -1%;
+}
+.service-grid .circle, .service-grid .shaped, .service-grid .square {
+  text-align: start;
+  background-color: rgb(1, 24, 31);
+  width: 200px;
+  height: 70px;
+  border: 1px solid;
+  border-color: rgb(1, 24, 31) rgb(1, 24, 31) gray rgb(1, 24, 31);
+  margin-left: 40%;
+  margin-top: 20%;
+}
+.service-grid .square {
+  margin-left: 37%;
+}
+.service-grid .shaped {
+  margin-left: 37%;
+}
+.service-grid .rating, .service-grid .hours, .service-grid .no_of_std {
+  color: rgb(252, 205, 50);
+  font-size: 6dvh;
+}
+.success {
+  margin-top: 11%;
+  margin-bottom: 2%;
+  text-align: center;
+  width: 100%;
+  line-height: 80%;
+}
+.success p {
+  line-height: 0.5;
+}
+.success span {
+  text-decoration: underline;
+  text-decoration-color: rgb(252, 205, 50);
+}
+
+.success-card {
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 5%;
+  padding-top: 2%;
+  text-align: center;
+  display: grid;
+  max-width: 100%;
+  height: 80vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.success-card .icon, .success-card .icon5, .success-card .icon4, .success-card .icon3, .success-card .icon2, .success-card .icon1 {
+  font-size: 3rem;
+  color: rgb(204, 123, 17);
+}
+.success-card .icon1 {
+  color: gray;
+}
+.success-card .icon2 {
+  color: rgb(71, 173, 139);
+}
+.success-card .icon3 {
+  color: rgb(71, 173, 139);
+}
+.success-card .icon4 {
+  color: rgb(204, 123, 17);
+}
+.success-card .icon5 {
+  color: gray;
+}
+
+.purchase {
+  margin-right: 1%;
+  margin-left: 1%;
+  background-color: rgb(240, 240, 240);
+  max-width: 10 0%;
+  height: 60vh;
+  text-align: center;
+  padding-top: 4%;
+}
+.purchase button {
+  margin-top: 2%;
+  margin-bottom: 4%;
+  padding: 1% 2%;
+  background-color: rgb(252, 205, 50);
+  border-color: rgb(252, 205, 50);
+  border-radius: 20px;
+}
+.purchase .purchase-image {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 2px;
+       column-gap: 2px;
+}
+.purchase .purchase-image .img1, .purchase .purchase-image .img2, .purchase .purchase-image .img3 {
+  display: inline-block;
+}
+.purchase .purchase-image .img1 h2, .purchase .purchase-image .img2 h2, .purchase .purchase-image .img3 h2, .purchase .purchase-image .img1 p, .purchase .purchase-image .img2 p, .purchase .purchase-image .img3 p {
+  padding-left: 4%;
+  text-align: justify;
+}
+.purchase .purchase-image img {
+  width: 90%;
+}
+
+.review {
+  margin-top: 35%;
+  margin-left: 12%;
+  text-align: justify;
+}
+
+.card {
+  display: grid;
+  -moz-column-gap: 1%;
+       column-gap: 1%;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3%;
+  margin-left: 12%;
+  margin-right: 12%;
+  text-align: center;
+}
+.card .card1, .card .card2, .card .card3 {
+  width: 20vw;
+  background-color: whitesmoke;
+  height: 25vh;
+  padding: 2rem;
+}
+.card .card1:hover, .card .card2:hover, .card .card3:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.advisor {
+  text-align: center;
+  margin-top: 15%;
+}
+.advisor span {
+  -webkit-text-decoration: underline rgb(252, 205, 50);
+          text-decoration: underline rgb(252, 205, 50);
+}
+
+.advisor-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  justify-content: center;
+  margin-top: 4%;
+  margin-left: 11%;
+  margin-right: 10%;
+  -moz-column-gap: 2px;
+       column-gap: 2px;
+}
+.advisor-grid-container .image1, .advisor-grid-container .image2, .advisor-grid-container .image3 {
+  display: inline-block;
+}
+.advisor-grid-container .image1 h2, .advisor-grid-container .image2 h2, .advisor-grid-container .image3 h2, .advisor-grid-container .image1 p, .advisor-grid-container .image2 p, .advisor-grid-container .image3 p {
+  text-align: justify;
+  padding-left: 4%;
+}
+.advisor-grid-container img {
+  width: 90%;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  padding: 1% 2%;
+  border-color: rgb(252, 205, 50);
+  border-radius: 20px;
+}
+.btn button {
+  background-color: rgb(252, 205, 50);
+}
+
+.footer {
+  background-color: rgb(1, 24, 31);
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+  padding-top: 8%;
+}
+.footer .about {
+  margin-left: 15%;
+  color: azure;
+  line-height: 2rem;
+}
+.footer .about li {
+  list-style: none;
+  text-align: start;
+}
+.footer .about li a {
+  color: beige;
+  background-color: rgb(1, 24, 31);
+  width: 20px;
+}
+.footer .about li a i {
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: rgb(1, 24, 31);
+  width: 3rem;
+  border: 1px solid;
+  border-radius: 50%;
+}
+.footer .details {
+  color: azure;
+  line-height: 2rem;
+  text-align: justify;
+}
+.footer .details li {
+  list-style: none;
+}
+.footer .contactus {
+  line-height: 2rem;
+  text-align: justify;
+}
+.footer .contactus form button {
+  background-color: rgb(252, 205, 50);
+}
+.footer .contactus li {
+  list-style: none;
+  padding-bottom: 2%;
+}
+.footer .contactus li input {
+  width: 75%;
+  padding: 1.5%;
+  background-color: rgb(1, 24, 31);
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 2rem;
+}
+
+.footer2 {
+  background-color: rgb(1, 24, 31);
+  max-width: 100%;
+  text-align: center;
+  height: 100px;
+  margin-top: -1.1%;
+  padding-top: 30px;
+}/*# sourceMappingURL=task.css.map */

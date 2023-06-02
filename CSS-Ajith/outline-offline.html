@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline-offset</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            height: 1000px;
+            width: 100%;
+        }
+        div{
+            border: 2px solid red;
+            outline: green solid 20px;
+            margin: auto;
+            padding: 30px;
+            text-align: center;
+        }
+        .p1{
+            border: 2px solid goldenrod;
+            outline: black solid ;
+            outline-width: thin;
+            margin: auto;
+            padding: 30px;
+            text-align: center;
+        }
+        .p2{
+            border: 2px solid pink;
+            outline: yellow solid ;
+            outline-width: thick;
+            margin: auto;
+            padding: 30px;
+            text-align: center;
+        }
+        .p3{
+            border: 2px solid darkcyan;
+            outline: orange solid ;
+            outline-width: medium;
+            margin: auto;
+            padding: 30px;
+            text-align: center;
+        }
+        .p4{
+            border: 2px solid darkcyan;
+            outline: orange solid ;
+            outline-width: 5px;
+            outline-offset: 10px;
+            margin: auto;
+            padding: 30px;
+            text-align: center;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS outline-offset property</h1>
+    <h3>Outline</h3>
+    <div>
+        Outline is line drawn outside the border
+    </div> <br><br>
+    <p class="p1">
+        Thin Outline
+    </p> <br><br>
+    <p class="p2"> 
+        Thick Outline 
+    </p> <br> <br>
+    <p class="p3">
+        Medium Outline
+    </p> <br> <br>
+    <h4>Outline-OFFSET</h4>
+    <P class="p4">The outline-offset property adds space between an outline and the edge/border of an element. 
+        The space between an element and its outline is transparent.</P>
+    
+</body>
+</html>

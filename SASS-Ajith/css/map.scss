@@ -1,0 +1,18 @@
+$fontcolor: ("color1":red, "color2":greenyellow, "color3":green);
+$fontweight: ("normal":400, "medium":500, "bold":700);
+$fontcolor2: ("color":rgb(104, 6, 26));
+$fontstyle: ("italic":italic);
+$padding1: ("top":10px, "right":15px);
+$padding2: ("bottom":20px,"left":30px);
+$merge: map-merge($padding1,$padding2);
+
+
+h1{
+    color: map-get($fontcolor,"color1");
+    font-weight: map-get($fontweight,"medium");
+}
+h2{
+    color: map-values($fontcolor2);
+    font-style: map-keys($fontstyle);
+    margin: map-values($merge);
+}

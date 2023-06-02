@@ -1,0 +1,72 @@
+@import "variables";
+
+body{
+    background-color: $primaryColor;    
+}
+h1{
+    color: $head-color;
+    text: {
+        align: center;
+        transform: uppercase;
+        overflow: hidden;
+      }
+}
+p{
+    $text-color:blue /*can use !global keyword to make it global*/;
+    color: $text-color;
+    font: {
+        family: Helvetica, sans-serif;
+        size: 18px;
+        weight: bold;
+      }
+      
+      text: {
+        align: center;
+        transform: lowercase;
+        overflow: hidden;
+      }
+}
+h2{
+    
+    color: $text-color;
+    text: {
+        align: center;
+        transform: uppercase;
+        overflow: hidden;
+      }
+}
+h3{
+   
+    color: $head-color;
+}
+b{
+    color: $boldColor;
+    text-align: center;
+}
+
+/*Nested Rules*/
+nav{
+    
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        display: inline-block;
+        a{
+            text-decoration: none;
+            color: $navColor;
+            
+        }
+    }
+}
+/*@mixin*/
+
+@mixin mixinhead($bgcolor){
+    color: crimson;
+    font-style: italic;
+    background-color: $bgcolor;
+}
+.mixin{
+    @include mixinhead(green)
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            background-color: azure;
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.4fr 1.5fr 1.3fr 0.8fr;
+            grid-template-areas: "header header header header"
+                                  "sidebar main main main"
+                                  "sidebar cont1 cont2 cont3"
+                                  "sidebar footer footer footer";
+            grid-gap: 0.2rem;
+            text-align: center;
+            font-size: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .header{
+            background-color: aqua;
+            grid-area: header;
+        }
+        .side{
+            background-color: chartreuse;
+            grid-area: sidebar;
+            
+        }
+        .main{
+            background-color: darkturquoise;
+            grid-area: main;
+            
+        }
+        .con1{
+            background-color: khaki;
+            grid-area: cont1;
+            
+        }
+        .con2{
+            background-color: khaki;
+            grid-area: cont2;
+            
+        }
+        .con3{
+            background-color: khaki;
+            grid-area: cont3;
+            
+        }
+        .footer{
+            background-color: lightcoral;
+            grid-area: footer;
+        }
+        @media only screen and (max-width:640px) {
+            .container{
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.2fr 2fr 0.2fr 1.2fr 1.2fr 1.2fr 1fr;
+                grid-template-areas: "header"
+                                      "sidebar"
+                                      "main"
+                                      "cont1"
+                                      "cont2"
+                                      "cont3"
+                                      "footer";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="side">Sidebar</div>
+        <div class="main">Main</div>
+        <div class="con1">content1</div>
+        <div class="con2">content2</div>
+        <div class="con3">content3</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+h1 {
+  color: #996300;
+  padding: 30px;
+}
+
+h2 {
+  color: #ffb733;
+  padding: 10px 2em 30px;
+}
+
+h3 {
+  color: #664200;
+  padding: 10px 20px 30px 40px;
+}
+
+h4 {
+  color: red;
+  padding: 40px 30px;
+}
+
+.div1, .div8, .div7, .div6, .div5, .div4, .div3, .div2 {
+  background-color: orange;
+  border: 2px solid;
+  border-color: #996300;
+  width: 1000px;
+  height: 200px;
+}
+
+.div2 {
+  background-color: #cc8400;
+}
+
+.div3 {
+  background-color: #ffc966;
+}
+
+.div4 {
+  background-color: #fffa00;
+}
+
+.div5 {
+  background-color: orange;
+}
+
+.div6 {
+  background-color: #a68b59;
+}
+
+.div7 {
+  background-color: #996366;
+}
+
+.div8 {
+  background-color: rgba(255, 165, 0, 0.6);
+}/*# sourceMappingURL=colors.css.map */

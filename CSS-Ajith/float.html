@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floats</title>
+    <style>
+        .img1{
+            width: 20%;
+            height: 200px;
+            float:left;
+        }
+        .img2{
+            width: 20%;
+            height: 200px;
+            clear: left;
+            float:right;
+           
+        }
+        .img3{
+            width: 20%;
+            height: 200px;
+            float:none;
+        }
+        div{
+            float: left;
+            padding: 15px;
+        }
+        .div1{
+            background-color: chocolate;
+        }
+        .div2{
+            background-color: orange;
+        }
+        .div3{
+            background-color: olivedrab;
+        }
+        .para2{
+            clear: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Float</h1>
+    <p>The CSS float property is a positioning property. 
+        It is used to push an element to the left or right, allowing other element to wrap around it.
+         It is generally used with images and layouts.</p>
+
+    <p>Elements are floated only horizontally. So it is possible only to float elements left or right, not up or down.</p>
+    <h1>Float Left</h1>
+    <img class="img1" src="./messi-world-cup.jpg" alt="liomessi">
+    <p style="text-align: justify;">Lionel Messi-led Argentina won the FIFA World Cup final in Qatar against France on Sunday after a penalty shootout. Lionel Messi's campaign has left internet naming him as football's GOAT (Greatest of all time). However, amid all the social media craze, a 7-year-old tweet has made a comeback. The tweet by José Miguel Polanco had claimed that the 34-year-old footballer will win the World Cup and become the greatest player of all times.
+
+        The tweet that dates back to March 21, 2015 read,  “December 18, 2022. 34-year-old Leo Messi will win the World Cup and become the greatest player of all times. Check back with me in 7 years."</p>
+    <hr>
+    <h1>Float Right and Clear</h1>
+    <img class="img2" src="./messi-world-cup.jpg" alt="liomessi">
+    <p class="para2" style="text-align: justify;">Lionel Messi-led Argentina won the FIFA World Cup final in Qatar against France on Sunday after a penalty shootout. Lionel Messi's campaign has left internet naming him as football's GOAT (Greatest of all time). However, amid all the social media craze, a 7-year-old tweet has made a comeback. The tweet by José Miguel Polanco had claimed that the 34-year-old footballer will win the World Cup and become the greatest player of all times.
+
+        The tweet that dates back to March 21, 2015 read,  “December 18, 2022. 34-year-old Leo Messi will win the World Cup and become the greatest player of all times. Check back with me in 7 years."</p>
+    <hr>
+    <h1>No Float</h1>
+    <img class="img3" src="./messi-world-cup.jpg" alt="liomessi">
+    <p style="text-align: justify;">Lionel Messi-led Argentina won the FIFA World Cup final in Qatar against France on Sunday after a penalty shootout. Lionel Messi's campaign has left internet naming him as football's GOAT (Greatest of all time). However, amid all the social media craze, a 7-year-old tweet has made a comeback. The tweet by José Miguel Polanco had claimed that the 34-year-old footballer will win the World Cup and become the greatest player of all times.
+
+        The tweet that dates back to March 21, 2015 read,  “December 18, 2022. 34-year-old Leo Messi will win the World Cup and become the greatest player of all times. Check back with me in 7 years."</p>
+    <hr>
+    <h1>Float Next To Each other</h1>
+    <div>
+        
+        <div class="div1">DIV 1</div>
+        <div class="div2">DIV 2</div>
+        <div class="div3">DIV 3</div>
+    </div>
+</body>
+</html>

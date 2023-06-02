@@ -1,0 +1,94 @@
+$bodyColor: rgb(238, 213, 202);
+$navcolor: rgb(238, 8, 8);
+$hovColor: rgb(8, 238, 27);
+
+@mixin border($border){
+    border-radius: $border;
+
+}
+@mixin shadow($top,$left,$blur,$color){
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+}
+@mixin link-border($bgclr){
+    border: solid 1px green;
+    border-radius: 2px;
+    background: $bgclr;
+}
+
+body{
+    background-color: $bodyColor
+}
+nav{
+    text-align: center;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        
+    }
+    li{
+        display: inline-block;
+        
+    }
+    a{
+        display: block;
+        text-decoration: none;
+        padding: 10px 15px;
+        color: $navcolor;
+        @include link-border(pink);
+        
+        &:hover{
+            color: $hovColor;
+        }
+    }
+}
+.container{
+    display: flex;
+    gap: 20px;
+    padding: 10%;
+    margin: 0 auto;
+}
+.div1{
+    background: green;
+    width: 200px;
+    height: 100px;
+    @include border(5px);
+    @include shadow(5px,5px,0,lightgreen);
+}
+.div2{
+    background: crimson;
+    width: 300px;
+    height: 300px;
+    @include border(10px);
+    @include shadow(-5px,-5px,5px,red);
+}
+.div3{
+    background: orange;
+    width: 350px;
+    height: 350px;
+    @include border(20px);
+    @include shadow(2px,2px,5px,green);
+}
+#container{
+    display: flex;
+    gap: 20px;
+    padding: 10%;
+    margin: 0 auto;
+}
+#div1{
+    background-color: aqua;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    border: solid 1px goldenrod;
+}
+#div2{
+    background-color: rgb(123, 255, 0);
+    @extend #div1
+}
+#div3{
+    background-color: rgb(255, 0, 191);
+    @extend #div1
+}
