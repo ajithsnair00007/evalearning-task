@@ -1,4 +1,5 @@
 body {
+  margin: auto;
   max-width: 100%;
   font-family: "Founders Grotesk", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   flex-wrap: wrap;
@@ -128,7 +129,7 @@ body p {
 }
 
 .service-grid {
-  width: 100%;
+  max-width: 100%;
   text-align: center;
   display: grid;
   grid-template-columns: 25% 25% 25%;
@@ -137,7 +138,7 @@ body p {
   width: 100%;
   height: 60vh;
   margin-top: -1%;
-  padding-left: 8%;
+  padding-left: 0%;
 }
 .service-grid .laptop, .service-grid .clock, .service-grid .person {
   font-size: 5vh;
@@ -208,16 +209,27 @@ body p {
   color: gray;
 }
 
-.purchase {
-  margin-right: 1%;
-  margin-left: 1%;
-  background-color: rgb(240, 240, 240);
-  max-width: 10 0%;
-  height: 60vh;
-  text-align: center;
-  padding-top: 4%;
+.purchasecontainer {
+  display: relative;
+  max-width: 100%;
+  justify-content: center;
 }
-.purchase button {
+.purchasecontainer .purchasezindex {
+  margin: auto;
+  width: 100%;
+  height: 400px;
+  background-color: rgb(223, 219, 219);
+  position: absolute;
+  z-index: -1;
+}
+.purchasecontainer .purchaseitems {
+  margin: auto;
+  padding-top: 4%;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+}
+.purchasecontainer .purchaseitems button {
   margin-top: 2%;
   margin-bottom: 4%;
   padding: 1% 2%;
@@ -225,7 +237,7 @@ body p {
   border-color: rgb(252, 205, 50);
   border-radius: 20px;
 }
-.purchase .purchase-image {
+.purchasecontainer .purchaseitems .purchase-image {
   margin-left: 10%;
   margin-right: 10%;
   padding-top: 3%;
@@ -234,27 +246,27 @@ body p {
   -moz-column-gap: 2px;
        column-gap: 2px;
 }
-.purchase .purchase-image .img1, .purchase .purchase-image .img2, .purchase .purchase-image .img3 {
+.purchasecontainer .purchaseitems .purchase-image .img1, .purchasecontainer .purchaseitems .purchase-image .img2, .purchasecontainer .purchaseitems .purchase-image .img3 {
   display: inline-block;
 }
-.purchase .purchase-image .img1 h2, .purchase .purchase-image .img2 h2, .purchase .purchase-image .img3 h2, .purchase .purchase-image .img1 p, .purchase .purchase-image .img2 p, .purchase .purchase-image .img3 p {
+.purchasecontainer .purchaseitems .purchase-image .img1 h2, .purchasecontainer .purchaseitems .purchase-image .img2 h2, .purchasecontainer .purchaseitems .purchase-image .img3 h2, .purchasecontainer .purchaseitems .purchase-image .img1 p, .purchasecontainer .purchaseitems .purchase-image .img2 p, .purchasecontainer .purchaseitems .purchase-image .img3 p {
   padding-left: 4%;
   text-align: justify;
 }
-.purchase .purchase-image img {
+.purchasecontainer .purchaseitems .purchase-image img {
   width: 90%;
 }
 
 .review {
-  margin-top: 35%;
+  margin-top: 18%;
   margin-left: 12%;
   text-align: justify;
 }
 
 .card {
   display: grid;
-  -moz-column-gap: 1%;
-       column-gap: 1%;
+  -moz-column-gap: 4%;
+       column-gap: 4%;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 3%;
   margin-left: 12%;
@@ -262,56 +274,61 @@ body p {
   text-align: center;
 }
 .card .card1, .card .card2, .card .card3 {
-  width: 20vw;
+  width: 90%;
   background-color: whitesmoke;
-  height: 25vh;
+  height: 30vh;
   padding: 2rem;
 }
 .card .card1:hover, .card .card2:hover, .card .card3:hover {
   background-color: rgb(238, 238, 238);
 }
 
-.advisor {
-  text-align: center;
-  margin-top: 15%;
+.advisecontainer {
+  height: 130vh;
+  max-width: 100%;
+  justify-content: center;
+  padding-top: 6%;
 }
-.advisor span {
+.advisecontainer .advisor {
+  text-align: center;
+}
+.advisecontainer .advisor span {
   -webkit-text-decoration: underline rgb(252, 205, 50);
           text-decoration: underline rgb(252, 205, 50);
 }
-
-.advisor-grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.advisecontainer .adviseitems {
+  margin: auto;
+  padding-top: 4%;
+  width: 100%;
+  height: 600px;
   text-align: center;
-  justify-content: center;
-  margin-top: 4%;
-  margin-left: 11%;
-  margin-right: 10%;
-  -moz-column-gap: 2px;
-       column-gap: 2px;
 }
-.advisor-grid-container .image1, .advisor-grid-container .image2, .advisor-grid-container .image3 {
-  display: inline-block;
-}
-.advisor-grid-container .image1 h2, .advisor-grid-container .image2 h2, .advisor-grid-container .image3 h2, .advisor-grid-container .image1 p, .advisor-grid-container .image2 p, .advisor-grid-container .image3 p {
-  text-align: justify;
-  padding-left: 4%;
-}
-.advisor-grid-container img {
-  width: 90%;
-}
-
-.btn {
-  text-align: center;
+.advisecontainer .adviseitems button {
   margin-top: 2%;
   margin-bottom: 4%;
   padding: 1% 2%;
+  background-color: rgb(252, 205, 50);
   border-color: rgb(252, 205, 50);
   border-radius: 20px;
 }
-.btn button {
-  background-color: rgb(252, 205, 50);
+.advisecontainer .adviseitems .advisor-grid-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 2px;
+       column-gap: 2px;
+}
+.advisecontainer .adviseitems .advisor-grid-container .image1, .advisecontainer .adviseitems .advisor-grid-container .image2, .advisecontainer .adviseitems .advisor-grid-container .image3 {
+  display: inline-block;
+}
+.advisecontainer .adviseitems .advisor-grid-container .image1 h2, .advisecontainer .adviseitems .advisor-grid-container .image2 h2, .advisecontainer .adviseitems .advisor-grid-container .image3 h2, .advisecontainer .adviseitems .advisor-grid-container .image1 p, .advisecontainer .adviseitems .advisor-grid-container .image2 p, .advisecontainer .adviseitems .advisor-grid-container .image3 p {
+  padding-left: 4%;
+  text-align: justify;
+}
+.advisecontainer .adviseitems .advisor-grid-container img {
+  width: 90%;
 }
 
 .footer {
