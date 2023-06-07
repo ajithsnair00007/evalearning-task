@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion</title>
+</head>
+<body>
+    <h1>Type Conversion</h1>
+    <p>The conversion of one data type to another data type is called Type conversion.</p>
+    <h3>Two Types are: </h3>
+    <ul>
+        <li>Implicit Type conversion</li>
+        <p>JavaScript automatically converts one data type to another. This is known as implicit conversion.</p>
+        <li>Explicit Type conversion </li>
+        <p>Javascript allows us to manually convert a data type into another data type.
+            This is called explicit conversion.
+            Explicit type conversions are done using the built-in methods.</p>
+    </ul>
+
+    <script>
+        
+
+            var result_1 = Number('890');
+            console.log(result_1);
+            console.log(typeof(result_1));
+
+            var result_2 = Number('890e-1')  
+            console.log(result_2); 
+            console.log(typeof(result_2)); 
+
+            var result_3 = Number(true);
+            console.log(result_3);
+            console.log(typeof(result_3));
+
+            var result_4 = Number(false);
+            console.log(result_4);
+            console.log(typeof(result_4));
+
+            // Empty strings and null values return 0.
+
+            var result_5 = Number(null);
+            console.log(result_5);  // 0
+            console.log(typeof(result_5));  // 0
+
+            var result_6 = Number(' ')
+            console.log(result_6);
+            console.log(typeof(result_6));
+
+            // If a string is an invalid number, the result will be NaN.
+
+            result_7 = Number('JavaScript');
+            console.log(result_7);
+            console.log(typeof(result_7));
+
+            result_8 = Number(undefined);
+            console.log(result_8);
+            console.log(typeof(result_8));
+
+            result_9 = Number(NaN);
+            console.log(result_9);
+            console.log(typeof(result_9));
+
+    </script>
+</body>
+</html>

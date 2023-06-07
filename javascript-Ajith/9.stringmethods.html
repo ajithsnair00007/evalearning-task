@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+</head>
+<body>
+    <h1>String Methods</h1>
+
+    <h5>Length</h5>
+    <p id="demo"></p> <hr>
+
+    <h5>Position(indexOf)</h5>
+    <p id="demo1"></p> <hr>
+
+    <h5>lastIndexOf</h5>
+    <p id="last"></p>
+    <p id="loc"></p>
+    <p id="search"></p> <hr>
+
+    <h5>slice method</h5>
+    <p id="sli"></p>
+    <p id="sli2"></p>
+    <p id="sub"></p>
+    <p id="substr"></p>
+    <hr>
+
+    <h5>replace</h5>
+    <p id="rep"></p> <hr>
+
+    <h5>Concatenation</h5>
+    <p id="conc"></p>
+    <hr>
+
+    <h5>Trim</h5>
+    <p>removes white spaces from starting and ending</p>
+    <p id="trim"></p>
+    <hr>
+
+    <h5>CharAt</h5>
+    <p id="char"></p>
+    <p id="charcod"></p> <hr>
+
+    <h5>property access[]</h5>
+    <p id="prop"></p> <hr>
+
+    <h5>converting string to an array</h5>
+    <p id="arr"></p>
+    <script>
+          let txt = 'Evalogical'
+          let str = 'I am Ajith'
+          document.getElementById('demo').innerHTML=txt.length;
+          document.getElementById('demo1').innerHTML=str.indexOf('Ajith');
+
+          let place = 'I am from Trivandrum.Capital of kerala is Trivandrum'
+          document.getElementById('last').innerHTML= place.lastIndexOf('Trivandrum')
+
+          let loc = 'I am from Trivandrum.Capital of kerala is Trivandrum'
+          document.getElementById('loc').innerHTML= loc.indexOf('Trivandrum',20);
+          document.getElementById('search').innerHTML= loc.search('Trivandrum')
+
+          let slicee = "Cricket, Football ,Volleyball";
+          document.getElementById('sli').innerHTML = slicee.slice(8,17);
+          document.getElementById('sli2').innerHTML = slicee.slice(8);
+          document.getElementById('sub').innerHTML = slicee.substring(8,17);
+          document.getElementById('substr').innerHTML = slicee.substr(9,4);
+
+          //let hockey = slicee.replace("Volleyball","hockey");
+          document.getElementById('rep').innerHTML = slicee.replace('Volleyball','HOCKEY');
+
+          document.getElementById('conc').innerHTML= txt.concat(' ',str);
+
+          let trim = "    hello world    "
+          document.getElementById('trim').innerHTML = trim.trim();
+
+          document.getElementById('char').innerHTML = str.charAt(5);
+          document.getElementById('charcod').innerHTML = str.charCodeAt(5);
+
+          document.getElementById('prop').innerHTML = str[2];
+
+          document.getElementById('arr').innerHTML = place.split(' ');
+          
+    </script>
+</body>
+</html>

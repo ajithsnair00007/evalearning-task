@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatypes</title>
+</head>
+<body>
+    <h1>Datatypes</h1>
+    <h2>1. Number</h2>
+    <p id="num"></p>
+    <h2>2. String</h2>
+    <h4>String is data type which is primitive,that is it is immutable.</h4>
+    <p id="str"></p>
+
+    <h2>Arrays</h2>
+    <h4>Arrays are used to store multiple values in one container.</h4>
+    <h4>Arrays are non-primitive datatypes. ie,they are mutable</h4>
+    <p id="arr"></p>
+    <script>
+       var num =100;
+       var string = 'This is a string'
+       var arr = ['Ajith','Trivandrum',27];
+       arr[2] =26
+       console.log(num);
+       console.log(string);
+       console.log(arr);
+       document.getElementById("num").innerHTML=num;
+       document.getElementById("str").innerHTML=string;
+       document.getElementById("arr").innerHTML=arr;
+
+      
+    </script>
+</body>
+</html>
