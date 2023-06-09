@@ -1,5 +1,5 @@
 let arr = ['apple','orange',35];
-console.log(typeof(arr));
+console.log(Array.isArray(arr));
 console.log(arr);
 arr[2] = 'grapes'
 let i;

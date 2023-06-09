@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    
+</head>
+<body>
+    <h1>Functions in JavaScript</h1>
+    <h3>A function is a block of code that performs a specific task.</h3>
+    <button onclick="Hello()">click me</button>
+    <button onclick="greetings('Ajith')">Greeetings</button>
+    <button onclick="greetings('Mukhil')">Greeetings</button>
+   
+    <p id="demo"></p>
+    <p id="greet"></p>
+    <p id="hello"></p>
+    
+
+    <script>
+        
+        function Hello(){
+             document.getElementById("demo").innerHTML='Hello World!'
+        }
+
+        function greetings(name){
+            document.getElementById("greet").innerHTML= `Hello ${name} GoodMorning`
+        }
+        function add(num1,num2){
+            console.log(num1+num2);
+        }
+        add(4,6);
+        add(7,17);
+
+        function mult(a,b){
+            return a*b;
+        }
+        multiplication = mult(4,8);
+        console.log(multiplication);
+
+        sayHello();
+        function sayHello(){
+             document.getElementById("hello").innerHTML=`Hellooo World!`
+        }
+        
+        
+        function hai(n){
+            return `hai ${n}`
+        }
+        console.log(hai('Ajith'));
+    </script>
+</body>
+</html>
